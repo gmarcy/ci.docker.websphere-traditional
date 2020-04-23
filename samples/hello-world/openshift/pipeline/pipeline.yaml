@@ -22,6 +22,8 @@ spec:
           - name: image
             resource: sample-image
       params:
+        - name: BUILDER_IMAGE
+          value: "quay.io/multi-arch/buildah-stable:1.11.4"
         - name: DOCKERFILE
           value: "Dockerfile.ubi"
         - name: CONTEXT

@@ -7,9 +7,9 @@ spec:
   type: git
   params:
     - name: url
-      value: https://github.com/WASdev/ci.docker.websphere-traditional
+      value: https://github.com/gmarcy/ci.docker.websphere-traditional
     - name: revision
-      value: master
+      value: zlinux-cluster-changes
 ---
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineResource

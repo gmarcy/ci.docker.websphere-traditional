@@ -13,7 +13,7 @@ spec:
 
   steps:
     - name: patch
-      image: quay.io/openshift/origin-cli:latest
+      image: quay.io/gmarcy/origin-cli:latest
       command: ["/bin/bash", "-c"]
       args:
         - |-
