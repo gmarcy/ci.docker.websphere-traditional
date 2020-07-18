@@ -34,6 +34,8 @@ spec:
       value: $(params.repo-url)
     - name: revision
       value: $(params.branch-name)
+    - name: depth
+      value: 0
     - name: deleteExisting
       value: "true"
     - name: subdirectory
