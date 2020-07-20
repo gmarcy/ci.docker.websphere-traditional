@@ -34,12 +34,8 @@ spec:
       value: $(params.repo-url)
     - name: revision
       value: $(params.branch-name)
-    - name: depth
-      value: "0"
     - name: deleteExisting
       value: "true"
-    - name: subdirectory
-      value: "../source"
     workspaces:
     - name: output
       workspace: build-workspace
@@ -78,6 +74,6 @@ spec:
     - name: deployment
       value: "sample"
     - name: image-url
-      value: ${params.image-url}
+      value: $(params.image-url)
     runAfter:
     - apply-sample-manifests
