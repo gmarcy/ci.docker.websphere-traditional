@@ -86,7 +86,7 @@ RUN useradd $USER -g 0 -m --uid 1001 \
 
 COPY --chown=1001:0 --from=builder /opt/IBM /opt/IBM
 
-USER $USER
+USER 1001
 
 ENV PATH=/opt/IBM/WebSphere/AppServer/bin:$PATH \
     PROFILE_NAME=$PROFILE_NAME \
