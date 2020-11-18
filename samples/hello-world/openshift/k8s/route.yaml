@@ -22,9 +22,11 @@ metadata:
   name: console
 spec:
   path:
-    /
+    /admin
   port:
-    targetPort: console
+    targetPort: https
   to:
     kind: Service
     name: console
+  tls:
+    termination: reencrypt

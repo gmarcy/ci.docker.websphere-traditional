@@ -21,10 +21,9 @@ metadata:
     app: sample
   name: console
 spec:
-  type: NodePort
   ports:
-    - name: console
-      port: 9043
-      targetPort: 9043
+  - name: https
+    port: 9043
+    targetPort: 9043
   selector:
     app: sample
